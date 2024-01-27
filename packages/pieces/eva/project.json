@@ -1,0 +1,43 @@
+{
+  "name": "pieces-eva",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/pieces/eva/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/pieces/eva",
+        "tsConfig": "packages/pieces/eva/tsconfig.lib.json",
+        "packageJson": "packages/pieces/eva/package.json",
+        "main": "packages/pieces/eva/src/index.ts",
+        "assets": [
+          "packages/pieces/eva/*.md"
+        ],
+        "buildableProjectDepsInPackageJsonType": "dependencies",
+        "updateBuildableProjectDepsInPackageJson": true
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs pieces-eva {args.ver} {args.tag}",
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/pieces/eva/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

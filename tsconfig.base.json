@@ -40,10 +40,10 @@
       "@activepieces/piece-bannerbear": [
         "packages/pieces/bannerbear/src/index.ts"
       ],
+      "@activepieces/piece-beamer": ["packages/pieces/beamer/src/index.ts"],
       "@activepieces/piece-bettermode": [
         "packages/pieces/bettermode/src/index.ts"
       ],
-      "@activepieces/piece-beamer": ["packages/pieces/beamer/src/index.ts"],
       "@activepieces/piece-binance": ["packages/pieces/binance/src/index.ts"],
       "@activepieces/piece-bonjoro": ["packages/pieces/bonjoro/src/index.ts"],
       "@activepieces/piece-box": ["packages/pieces/box/src/index.ts"],
@@ -85,6 +85,7 @@
       ],
       "@activepieces/piece-drip": ["packages/pieces/drip/src/index.ts"],
       "@activepieces/piece-dropbox": ["packages/pieces/dropbox/src/index.ts"],
+      "@activepieces/piece-eva": ["packages/pieces/eva/src/index.ts"],
       "@activepieces/piece-facebook-leads": [
         "packages/pieces/facebook-leads/src/index.ts"
       ],
@@ -139,6 +140,7 @@
       "@activepieces/piece-http": ["packages/pieces/http/src/index.ts"],
       "@activepieces/piece-hubspot": ["packages/pieces/hubspot/src/index.ts"],
       "@activepieces/piece-imap": ["packages/pieces/imap/src/index.ts"],
+      "@activepieces/piece-inferix": ["packages/pieces/inferix/src/index.ts"],
       "@activepieces/piece-instagram-business": [
         "packages/pieces/instagram-business/src/index.ts"
       ],
